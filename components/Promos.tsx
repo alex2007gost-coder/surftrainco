@@ -1,7 +1,6 @@
 import Image from "next/image";
 import PaperSection from "@/components/PaperSection";
-import PromoCard from "@/components/PromoCard";
-import SectionTitle from "@/components/SectionTitle";
+import PromosSlider from "@/components/PromosSlider";
 import { promos } from "@/lib/data";
 
 export default function Promos() {
@@ -22,15 +21,7 @@ export default function Promos() {
         className="absolute right-[55px] top-[137px] hidden rotate-[10.5deg] min-[1700px]:block"
       />
 
-      <div className="container-main">
-        <SectionTitle title="Акции" script="и скидки" />
-
-        <div className="mt-[66px] grid grid-cols-3 gap-[30px]">
-          {promos.map((promo) => (
-            <PromoCard key={promo.title} promo={promo} />
-          ))}
-        </div>
-      </div>
+      <PromosSlider promos={promos} />
     </PaperSection>
   );
 }

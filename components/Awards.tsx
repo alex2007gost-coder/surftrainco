@@ -1,4 +1,4 @@
-import AwardCard from "@/components/AwardCard";
+import AwardsSlider from "@/components/AwardsSlider";
 import PaperSection from "@/components/PaperSection";
 import SectionTitle from "@/components/SectionTitle";
 import { awards, awardYears } from "@/lib/data";
@@ -21,8 +21,8 @@ export default function Awards() {
         </ul>
       </div>
 
-      <div className="mt-[69px] flex justify-center">
-        <AwardCard award={awards[0]} />
+      <div className="mt-[69px]">
+        <AwardsSlider awards={awards} />
       </div>
     </PaperSection>
   );
