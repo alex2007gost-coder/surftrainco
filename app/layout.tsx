@@ -6,6 +6,8 @@ import "@fontsource/onest/700.css";
 import "@fontsource/onest/800.css";
 import "@fontsource/marck-script/400.css";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "SurfTrainCo — школа серфинга в Москве",
@@ -16,7 +18,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ru" data-scroll-behavior="smooth">
       <body id="top" className="relative overflow-x-clip antialiased">
+        {/* Хедер */}
+        <Header />
+
         <main className="pb-[120px]">{children}</main>
+
+        {/* Футер */}
+        <Footer />
       </body>
     </html>
   );
