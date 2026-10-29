@@ -76,6 +76,12 @@ export const messengers: Social[] = [
   { name: "Viber", icon: "/images/icons/viber.png", href: "#" },
 ];
 
+export const networks: Social[] = [
+  { name: "Instagram", icon: "/images/icons/instagram.png", href: "#" },
+  { name: "TikTok", icon: "/images/icons/tiktok.png", href: "#" },
+  { name: "ВКонтакте", icon: "/images/icons/vk.png", href: "#" },
+];
+
 export const advantages: Advantage[] = [
   {
     title: "Профессиональное руководство",
@@ -183,3 +189,5 @@ export const promos: Promo[] = [
     image: "/images/promos/promo-3.png",
   },
 ];
+
+export const lessonTimes = ["10:00", "12:00", "14:00", "16:00", "18:00", "20:00"];
