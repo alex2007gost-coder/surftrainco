@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import HashLink from "@/components/HashLink";
 import type { Promo } from "@/lib/data";
 
 type PromoCardProps = {
@@ -9,7 +9,7 @@ type PromoCardProps = {
 export default function PromoCard({ promo }: PromoCardProps) {
   return (
     <article className="rounded-[60px] bg-light p-[30px]">
-      <Link href="/contacts#booking" className="group relative block h-[365px] overflow-hidden rounded-[40px] text-white">
+      <HashLink href="/contacts#booking" className="group relative block h-[365px] overflow-hidden rounded-[40px] text-white">
         <Image
           src={promo.image}
           alt={promo.title.replace("\n", " ")}
@@ -24,7 +24,7 @@ export default function PromoCard({ promo }: PromoCardProps) {
           <Image src="/images/icons/promo-arrow.svg" alt="" width={18} height={18} className="-rotate-45" />
         </div>
         <h3 className="absolute inset-x-[30px] bottom-[26px] whitespace-pre-line text-[17px] font-semibold leading-[22px]">{promo.title}</h3>
-      </Link>
+      </HashLink>
     </article>
   );
 }

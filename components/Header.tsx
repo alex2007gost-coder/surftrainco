@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HashLink from "@/components/HashLink";
 import Logo from "@/components/Logo";
 import Nav from "@/components/Nav";
 import SocialLinks from "@/components/SocialLinks";
@@ -19,13 +20,13 @@ export default function Header() {
           </Link>
         </div>
 
-        <Link
+        <HashLink
           href="/#about"
           className="flex h-[57px] w-[160px] items-center justify-between rounded-full bg-navy pl-[23px] pr-[26px] text-[16px] text-white transition-opacity hover:opacity-90"
         >
           Подробнее
           <Image src="/images/icons/arrow-more.svg" alt="" width={17} height={16} className="-rotate-45" />
-        </Link>
+        </HashLink>
       </div>
     </header>
   );

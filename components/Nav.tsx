@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import HashLink from "@/components/HashLink";
 import { navLinks } from "@/lib/data";
 
 export default function Nav() {
@@ -15,14 +15,14 @@ export default function Nav() {
 
           return (
             <li key={link.label}>
-              <Link
+              <HashLink
                 href={link.href}
                 className={`flex h-[51px] items-center rounded-full px-[21.5px] text-[16px] transition-colors ${
                   isActive ? "bg-navy text-white" : "hover:bg-light"
                 }`}
               >
                 {link.label}
-              </Link>
+              </HashLink>
             </li>
           );
         })}

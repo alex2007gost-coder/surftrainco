@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HashLink from "@/components/HashLink";
 import Logo from "@/components/Logo";
 import SocialLinks from "@/components/SocialLinks";
 import { contacts, footerLinks, messengers } from "@/lib/data";
@@ -42,9 +43,9 @@ export default function Footer() {
           <ul className="mt-[30px] flex flex-col gap-[10px]">
             {footerLinks.map((link) => (
               <li key={link.label}>
-                <Link href={link.href} className="transition-colors hover:text-brand">
+                <HashLink href={link.href} className="transition-colors hover:text-brand">
                   {link.label}
-                </Link>
+                </HashLink>
               </li>
             ))}
           </ul>
@@ -59,9 +60,9 @@ export default function Footer() {
         </Link>
       </div>
 
-      <Link href="#top" aria-label="Наверх" className="absolute right-[80px] top-[381px] transition-transform hover:-translate-y-1">
+      <HashLink href="#top" aria-label="Наверх" className="absolute right-[80px] top-[381px] transition-transform hover:-translate-y-1">
         <Image src="/images/icons/to-top.svg" alt="" width={92} height={92} className="size-[92px]" />
-      </Link>
+      </HashLink>
     </footer>
   );
 }
