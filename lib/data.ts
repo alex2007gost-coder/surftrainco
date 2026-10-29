@@ -17,6 +17,14 @@ export type Advantage = {
   dark: boolean;
 };
 
+export type Award = {
+  label: string;
+  title: string;
+  organization: string;
+  year: number;
+  image: string;
+};
+
 export const navLinks: NavLink[] = [
   { label: "Главная", href: "/" },
   { label: "О нас", href: "/#about" },
@@ -81,3 +89,29 @@ export const advantages: Advantage[] = [
     dark: false,
   },
 ];
+
+export const awards: Award[] = [
+  {
+    label: "Награда",
+    title: "«Лучший инструктор\nпо серфингу 2022»",
+    organization: "от международной организации\nSurfers Against Sewage (SAS)",
+    year: 2022,
+    image: "/images/awards/award-2.png",
+  },
+  {
+    label: "Премия",
+    title: "«За исключительные\nдостижения в серфинге»",
+    organization: "от международной организации\nWorld Surf League (WSL)",
+    year: 2022,
+    image: "/images/awards/award-3.png",
+  },
+  {
+    label: "Награда",
+    title: "«За успешное\nпродвижение серфинга»",
+    organization: "от Международного\nОлимпийского Комитета",
+    year: 2022,
+    image: "/images/awards/award-1.png",
+  },
+];
+
+export const awardYears = [2022, 2021, 2019];
