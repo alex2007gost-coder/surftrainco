@@ -3,7 +3,7 @@ import MapSection from "@/components/MapSection";
 
 export default function ContactsPage() {
   return (
-    <div className="pt-[110px]">
+    <div className="pt-[140px]">
       {/* Запись на занятие */}
       <Booking />
 

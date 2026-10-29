@@ -7,13 +7,13 @@ import { contacts, messengers, networks } from "@/lib/data";
 
 export default function MapSection() {
   return (
-    <section id="map" className="relative mt-[120px] h-[1120px]">
+    <section id="map" className="relative mt-[120px] h-[1120px] overflow-hidden">
       <Image
         src="/images/map.png"
         alt="Карта: ул. Черкизова 14, Москва"
         width={1024}
         height={657}
-        className="absolute inset-x-0 top-[50px] h-[997px] w-full object-cover"
+        className="absolute left-1/2 top-[50px] h-[997px] w-[max(100%,1920px)] max-w-none -translate-x-1/2 object-cover"
       />
       <div className="absolute inset-x-0 top-0 h-[100px] bg-linear-to-b from-light to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-[100px] bg-linear-to-t from-light to-transparent" />

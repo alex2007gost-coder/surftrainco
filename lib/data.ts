@@ -71,9 +71,9 @@ export const contacts = {
 };
 
 export const messengers: Social[] = [
-  { name: "Telegram", icon: "/images/icons/telegram.png", href: "#" },
-  { name: "WhatsApp", icon: "/images/icons/whatsapp.png", href: "#" },
-  { name: "Viber", icon: "/images/icons/viber.png", href: "#" },
+  { name: "Telegram", icon: "/images/icons/telegram.png", href: "https://t.me/+79106849053" },
+  { name: "WhatsApp", icon: "/images/icons/whatsapp.png", href: "https://wa.me/79106849053" },
+  { name: "Viber", icon: "/images/icons/viber.png", href: "viber://chat?number=%2B79106849053" },
 ];
 
 export const networks: Social[] = [

@@ -60,7 +60,7 @@ export default function Footer() {
       </div>
 
       <Link href="#top" aria-label="Наверх" className="absolute right-[80px] top-[381px] transition-transform hover:-translate-y-1">
-        <Image src="/images/icons/to-top.svg" alt="" width={92} height={100} />
+        <Image src="/images/icons/to-top.svg" alt="" width={92} height={92} className="size-[92px]" />
       </Link>
     </footer>
   );

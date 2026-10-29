@@ -6,15 +6,17 @@ import { advantages, contacts } from "@/lib/data";
 export default function Hero() {
   return (
     <section className="relative h-[1161px]">
-      <Image
-        src="/images/hero-bg.png"
-        alt=""
-        width={1920}
-        height={1297}
-        loading="eager"
-        fetchPriority="high"
-        className="absolute inset-x-0 top-0 h-[1297px] w-full object-cover object-top"
-      />
+      <div className="absolute inset-x-0 top-0 h-[1297px]">
+        <Image
+          src="/images/hero-bg.png"
+          alt=""
+          fill
+          sizes="100vw"
+          loading="eager"
+          fetchPriority="high"
+          className="object-cover object-top"
+        />
+      </div>
 
       <div className="container-main relative pt-[206px]">
         <p className="font-script text-[34px] leading-[40px] tracking-normal text-brand">{contacts.street}</p>

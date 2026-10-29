@@ -13,7 +13,13 @@ export default function SocialLinks({ items, size, className = "" }: SocialLinks
     <ul className={`flex items-center ${className}`}>
       {items.map((item) => (
         <li key={item.name}>
-          <Link href={item.href} aria-label={item.name} className="block transition-transform hover:scale-110">
+          <Link
+            href={item.href}
+            aria-label={item.name}
+            target={item.href.startsWith("http") ? "_blank" : undefined}
+            rel={item.href.startsWith("http") ? "noreferrer" : undefined}
+            className="block transition-transform hover:scale-110"
+          >
             <Image src={item.icon} alt={item.name} width={size} height={size} />
           </Link>
         </li>
