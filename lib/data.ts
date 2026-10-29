@@ -25,6 +25,23 @@ export type Award = {
   image: string;
 };
 
+export type Program = {
+  slug: string;
+  name: string;
+  icon: string;
+  courseDuration: string;
+  lessonDuration: string;
+  features: string[];
+  oldPrice: string;
+  price: string;
+};
+
+export type Promo = {
+  term: string;
+  title: string;
+  image: string;
+};
+
 export const navLinks: NavLink[] = [
   { label: "Главная", href: "/" },
   { label: "О нас", href: "/#about" },
@@ -115,3 +132,54 @@ export const awards: Award[] = [
 ];
 
 export const awardYears = [2022, 2021, 2019];
+
+export const programs: Program[] = [
+  {
+    slug: "easy-start",
+    name: "Easy Start",
+    icon: "/images/programs/easy-start.svg",
+    courseDuration: "5 уроков",
+    lessonDuration: "45 минут",
+    features: [
+      "Воссозданный искусственный речной порог",
+      "Доска с плавниками, как на океане",
+      "Даёт возможность отработать технику поворотов, трюки на волне, развить баланс и мышечную память",
+      "Помогает подготовиться к катанию на океанских волнах (работа тела после поп-ап)",
+    ],
+    oldPrice: "29 000 руб.",
+    price: "12 990 руб.",
+  },
+  {
+    slug: "flow-rider",
+    name: "Flow Rider",
+    icon: "/images/programs/flow-rider.svg",
+    courseDuration: "5 уроков",
+    lessonDuration: "45 минут",
+    features: [
+      "Напор воды, направленный вверх по натянутой тканевой поверхности",
+      "Доска без плавников, нечто среднее между скейтбордом и сноубордом",
+      "Даёт возможность развить баланс и получить яркие эмоции от катания на волне",
+      "Возможность поймать удовольствие от движения и маневрирования на доске по водному потоку",
+    ],
+    oldPrice: "22 000 руб.",
+    price: "10 990 руб.",
+  },
+];
+
+export const promos: Promo[] = [
+  {
+    term: "До 25.04.2024",
+    title: "Бесплатный урок серфинга\nдля первого посещения",
+    image: "/images/promos/promo-1.png",
+  },
+  {
+    term: "Бессрочно",
+    title: "Сертификация или аттестация\nпо окончании курса",
+    image: "/images/promos/promo-2.png",
+  },
+  {
+    term: "До 12.05.2024",
+    title: "Пакет серфинга\nдля двоих",
+    image: "/images/promos/promo-3.png",
+  },
+];
